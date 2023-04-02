@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Luckiest+Guy:regular);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Luckiest Guy';
+    background-color: #e6e6ea;
+}
+
+.container{
+    padding: 20px;
+    overflow: hidden;
+    background-color: #fe4a49;
+}
+
+.container h1{
+    float: left;
+    margin-left: 10%;
+    color: white;
+}
+
+.container ul{
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 50%;
+}
+
+.container li{
+    margin-top: 10px;
+    float: left;
+    padding: 0 20px 0 20px;
+}
+
+.container a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.current a::after{
+    content: '_';
+    background-color: white;
+    font-size: 4px;
+    display: block;
+}
+
+.wrapper{
+    
+}
+
+.equation{
+    display: flex;
+    height: 100vh;
+    font-size: 65px;
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.number-in-table{
+    height: 300px;
+    width: 300px;
+    background-color: #58b1ffaf;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative; /*-- растягиваем ссылку на весь блок */
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: all 0.5s ease;
+}
+.number-in-table:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.number{
+    text-decoration: none;
+    font-size: 120px;
+    justify-content: center;
+    text-align: center;
+}
+/*-- растягиваем ссылку на весь блок */
+.number:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.x2{
+    background-color: aqua;
+}
+
+.x3{
+    background-color: aquamarine;
+}
+.x4{
+    background-color: rgb(127, 255, 174);
+}
+.x5{
+    background-color: rgb(144, 255, 127);
+}
+.x6{
+    background-color: rgb(208, 255, 127);
+}
+.x7{
+    background-color: rgb(255, 255, 127);
+}
+.x8{
+    background-color: rgb(255, 206, 127);
+}
+.x9{
+    background-color: rgb(255, 127, 127);
+}
